@@ -1,0 +1,57 @@
+/* File: src/App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Floating Button Styles */
+.chatbot-toggle-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-toggle-button:hover {
+  background-color: #0056b3;
+}
+
+/* Chatbot Window Container */
+.chatbot-container {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden; /* Ensures the inner chatbot respects the border radius */
+}
+
+/* Overriding default react-chatbot-kit styles */
+.react-chatbot-kit-chat-container {
+    position: relative;
+    width: 350px;
+}
